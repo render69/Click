@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div><!--верхняя часть-->
+
+  <nav id="navigation"> <!--символика компании (логотип и т.д.) (шапка) ИИИ навигация сайта-->
+    <div class = "footer-menu">
+      <div class = "footer-container">
+
+        <img href="main.html" id="icon" src="icon.png" height="100" width="200" border="0px" alt="img">
+
+    <ul><!--навигация-->
+    	
+      	<li><a id="main" href="main.html" >Игра</a></li>
+        <li><a id="main" href="statistics.html" >Статистика</a></li>
+        <li><a id="main" href="donat.html" >Донат</a></li>
+        <li><a id="main" href="rules.html" >Как начать играть?</a></li>
+     	
+    
+      	<a href="" class="gradient-button">Войти</a>
+		    <a href="" class="gradient-button">Зарегистирироватся</a>
+    </ul>
+      </div>
+    </div>   
+  </nav>
+</div>
+
+
+
+<hr>
+
+
+<div><!--центр-->
+  <aside id="fff" class="left-side" ><!--боковая часть с лева-->
+
+  </aside>
+  
+  <aside id="fff" class="right-part" ><!--боковая часть с права-->
+
+  </aside>
+
+
+    <div id="buttonfrombut"><!--основная часть-->
+      <main>
+        <h2>Игра кликер</h2>
+        <h1 id ="score">0$<img src="img/coins.png"></h1>
+        <button id="clickbtn" onclick="clickBtn()">+$</button>
+        <br><input id="gg" type="button" value="Прокачать на 1 уровень|-100$" onclick="update()">
+        <br><input id="gg" type="button" value="Прокачать на 2 уровня|-150$" onclick="update1()">
+        <br><input id="gg" type="button" value="Прокачать на 3 уровня|-250$" onclick="update2()">
+        <br><input id="gg" type="button" value="Прокачать на 10 уровней|-500$" onclick="update3()">
+        <br><input id="gg" type="button" value="Автокликер|-10000$" onclick="auto()">
+        <br><input id="gg" type="button" value="Подробнее" onclick="reboot()">
+        <img src="img/profit.png" class="img" onclick="pashalka()">
+      </main>
+      <script>
+var score = 0;
+updating = 1;
+function clickBtn() {
+  score = score + updating;
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+}
+function updjhjfgfgtftedrfatehjhvhjvhj() {
+  score = score - 100;
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+  if1();
+  updating += 1;
+}
+function update1() {
+  score = score - 150;
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+  if1();
+  updating += 2;
+}
+function update2() {
+  score = score - 250;
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+  if1();
+  updating += 3;
+}
+function update3() {
+  score = score - 500;
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+  if1();
+  updating += 10;
+}
+function auto() {
+  score = score - 10000;
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+  if1();
+  setTimeout("plusauto()", 1000);
+}
+function if1 () {
+  if (score < -100) {
+    document.write("Вы проиграли, так-как вы превысили лимит кредита");
+  }
+}
+function plusauto () {
+  score += updating;
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+  setTimeout("auto1()", 1000);
+}
+function auto1 () {
+  score += updating;
+  setTimeout("plusauto()", 1000);
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+}
+function pashalka () {
+  score += 10000;
+  document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
+}
+function reboot () {
+  alert("Ваш уровень прокачки " + updating + ". Ваш баланс " + score + " .");
+}
+      </script>
+    </div>
+
+</div>
+
+
+<div><!--нижняя часть-->
+
+  <footer><!--подвал-->
+    <hr>
+    <div>
+    <p>
+      © 2021 EasyLife
+    </p>
+    </div>
+    <div class="social-icons mt-lg-3 mt-2 text-center">
+      <ul>
+        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+        <li><a href="#"><span class="fa fa-rss"></span></a></li>
+       </ul>
+      <a href="world.html">Скам</a>
+    </div>
+      <script src="https://use.fontawesome.com/df966d76e1.js"></script>
+  </footer>
+
+</div>
+
+
+</body>
+</html>

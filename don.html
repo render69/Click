@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div><!--верхняя часть-->
+
+  <nav id="navigation"> <!--символика компании (логотип и т.д.) (шапка) ИИИ навигация сайта-->
+    <div class = "footer-menu">
+      <div class = "footer-container">
+
+        <img  id="icon" src="icon.png" height="100" width="200" border="0px" alt="img">
+
+      <ul><!--навигация-->
+        <li><a href="main.html">Игра</a></li>
+        <li><a href="statistics.html">Статистика</a></li>
+        <li><a href="donat.html">Донат</a></li>
+        <li><a href="rules.html">Как начать играть?</a></li>
+      </ul>
+
+        <div style="float:right"> Авторизация
+          <form  action="index.php" method="post" id="loginform">
+              <input  type="text"autocomplete="off" maxlength="16" placeholder="Логин">
+              <input  type="text"autocomplete="off" maxlength="20" placeholder="Пароль" style="-webkit-text-security: disc;">  
+              <input  type="submit" onClick="return false;" value="Войти">
+          </form>
+              <a href="#" onClick="getleftmenu('reg'); return false; ">Зарегистрироваться</a>
+              <a href="#" onClick="getleftmenu('restore'); return false;" style="float:right;">Восстановить пароль</a> 
+        </div>    
+      </div>
+    </div>   
+  </nav>
+</div>
+
+
+
+<hr>
+
+
+сюда должны кидать деньги
+
+
+<div><!--нижняя часть-->
+
+  <footer><!--подвал-->
+    <hr>
+    <div>
+    <p>
+      © 2021 EasyLife
+    </p>
+    </div>
+    <div class="social-icons mt-lg-3 mt-2 text-center">
+      <ul>
+        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+        <li><a href="#"><span class="fa fa-rss"></span></a></li>
+       </ul>
+    </div>
+      <script src="https://use.fontawesome.com/df966d76e1.js"></script>
+  </footer>
+
+</div>
+
+
+</body>
+</html>
