@@ -4,7 +4,7 @@ function clickBtn() {
   score = score + updating;
   document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
 }
-function updjhjfgfgtftedrfatehjhvhjvhj() {
+function update() {
   score = score - 100;
   document.getElementsByTagName("h1")[0].firstChild.data = score + "$";
   if1();
